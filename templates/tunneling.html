@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Kuantum Tünelleme Simülasyonu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../static/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <h1>Kuantum Tünelleme Simülasyonu</h1>
+    <h2>Bağımsız Değişkenler</h2>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="barrier-height">
+                <i class="fas fa-mountain"></i> Bariyer Yüksekliği (V₀):
+                <span id="height-value" class="value">10</span> eV
+            </label>
+            <input type="range" id="barrier-height" min="1" max="50" step="1" value="10">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9em; color: #7f8c8d;">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="barrier-width">
+                <i class="fas fa-arrows-alt-h"></i> Bariyer Genişliği (L):
+                <span id="width-value" class="value">1.0</span> ×10⁻¹⁰ m
+            </label>
+            <input type="range" id="barrier-width" min="0.1" max="5" step="0.1" value="1.0">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9em; color: #7f8c8d;">
+            </div>
+        </div>
+    </div>
+
+     <div class="controls" style="margin-top: 20px;">
+        <div class="control-group">
+            <label for="nuclei-count">
+                <i class="fas fa-microscope"></i> Çekirdek Sayısı (N₀):
+                <span id="nuclei-value" class="value">1000</span>
+            </label>
+            <input type="range" id="nuclei-count" min="100" max="5000" step="100" value="1000">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9em; color: #7f8c8d;">
+
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="decay-prob">
+                <i class="fas fa-dice"></i> Bozunma Olasılığı (p):
+                <span id="prob-value" class="value">0.01</span>
+            </label>
+            <input type="range" id="decay-prob" min="0.001" max="0.1" step="0.001" value="0.01">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9em; color: #7f8c8d;">
+            </div>
+        </div>
+    </div>
+
+    <button onclick="updateTunnelingGraph()">
+        <i class="fas fa-sync-alt"></i> Simülasyonu Çalıştır
+    </button>
+    <button onclick="resetTunneling()" style="background: #95a5a6;">
+        <i class="fas fa-redo"></i> Sıfırla
+    </button>
+
+    <div class="result">
+        <i class="fas fa-hourglass-half"></i> Half-Life: 
+        <span id="half-life-result">--</span> birim
+    </div>
+
+    <div class="loading" id="loading">Simülasyon çalıştırılıyor...</div>
+
+    <div class="graph-container">
+        <h2><i class="fas fa-chart-bar"></i> Simülasyon Sonuçları</h2>
+        <img id="tunneling-graph" src="" alt="Tünelleme Grafiği">
+    </div>
+
+    <button onclick="window.location.href='/'" class="btn-back">
+        <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+    </button>
+
+    <script src="/static/tunneling.js"></script>
+
+</body>
+</html>

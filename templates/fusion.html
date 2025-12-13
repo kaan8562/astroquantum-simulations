@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Nükleer Füzyon Simülasyonu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='/static/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <h1>Nükleer Füzyon Simülasyonu</h1>
+    <h2>Bağımsız Değişkenler</h2>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="temperature">
+                <i class="fas fa-thermometer-half"></i> Sıcaklık (T):
+                <span id="temp-value" class="value">15.0</span> MK
+            </label>
+            <input type="range" id="temperature" min="1" max="30" step="0.1" value="15">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9em; color: #7f8c8d;">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="gamow-energy">
+                <i class="fas fa-bolt"></i> Gamow Enerjisi (E_G):
+                <span id="gamow-value" class="value">500</span> keV
+            </label>
+            <input type="range" id="gamow-energy" min="100" max="1000" step="10" value="500">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9em; color: #7f8c8d;">
+            </div>
+        </div>
+    </div>
+    
+    <button onclick="updateFusionGraph()">
+        <i class="fas fa-sync-alt"></i> Grafiği Güncelle
+    </button>
+    <button onclick="resetFusion()" style="background: #95a5a6;">
+        <i class="fas fa-redo"></i> Sıfırla
+    </button>
+
+    <div class="result">
+        <i class="fas fa-chart-line"></i> Gamow Peak: 
+        <span id="peak-result">--</span> keV
+    </div>
+
+    <div class="loading" id="loading">Grafik hesaplanıyor...</div>
+
+    <div class="graph-container">
+        <h2><i class="fas fa-chart-area"></i> Füzyon Olasılığı Grafiği</h2>
+        <img id="fusion-graph" src="" alt="Füzyon Grafiği">
+    </div>
+
+    <button onclick="window.location.href='/'" class="btn-back">
+        <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+    </button>
+
+    <script src="/static/fusion.js"></script>
+</body>
+</html>
