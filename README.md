@@ -1,5 +1,7 @@
-# AtroKuantum Simülasyonları
-“Yıldızlarda Nükleer Füzyon ve Kuantum Tünelleme Olasılığı” simülasyonları
+# AstroKuantum Simülasyonları
+“Yıldızlarda Nükleer Füzyon ve Kuantum Tünelleme Olasılığı” AstroKuantum Eğitim Simülasyonları
+
+Nisa Nur Güneş - Kaan Kanyılmaz - İzmir Atatürk Lisesi - "Tübitak 2204-A Lise Öğrencileri Araştırma Projeleri Yarışması" için oluşturulmuştur.
 
 ## GEREKSİNİMLER
 - [**Python3**](https://www.python.org/downloads/)
