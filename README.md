@@ -3,9 +3,9 @@
 
 ## GEREKSİNİMLER
 - [**Python3**](https://www.python.org/downloads/)
-- Flask kütüphanesi
-- NumPy kütüphanesi
-- matplotlib kütüphanesi
+- [Flask kütüphanesi](https://flask.palletsprojects.com/en/stable/)
+- [NumPy kütüphanesi](https://numpy.org/doc/stable/)
+- [matplotlib kütüphanesi](https://matplotlib.org/stable/index.html)
 
 ## KURULUM VE ÇALIŞTIRMA
 Programın çalıştırılması için öncelikle çalıştırılacak ortamda Python yüklü olmalıdır. Makinenize Python kurmak için [**bu linkten**](https://www.python.org/downloads/) devam edebilirsiniz.
