@@ -27,7 +27,7 @@ python app.py
 Komut çıktısı olarak size verilen adrese gidin (CTRL + Sol Tık yaparak kolayca açabilirsiniz). Artık program cihazınızda 5000 portunda yerel olarak çalışıyor ve özgürce kullanabilirsiniz.
 
 ## Projeden Görüntüler
-(/images/image1.png)
-(/images/image2.png)
-(/images/image3.png)
-(/images/image4.png)
+[Görsel1](/images/image1.png)
+[Görsel2](/images/image2.png)
+[Görsel3](/images/image3.png)
+[Görsel4](/images/image4.png)
