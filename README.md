@@ -9,7 +9,11 @@
 
 ## KURULUM VE ÇALIŞTIRMA
 Programın çalıştırılması için öncelikle çalıştırılacak ortamda Python yüklü olmalıdır. Makinenize Python kurmak için [**bu linkten**](https://www.python.org/downloads/) devam edebilirsiniz.
-Ardından bilgisayarınıza bu github repository'sini kopyalayın veya dosyaları indirin. Kopyalanan dizine gidin. Gerekli kütüphaneleri kurmak için herhangi bir komut istemine(Windows PowerShell, CMD, Linux veya MacOS Terminalleri...) aşağıdaki komutu yazın:
+Ardından bilgisayarınıza bu github repository'sini kopyalayın. Bunun için de [Git](https://git-scm.com/) yazılımı kullanılabilir. Veya dosyaları dizinleri bozmadan manuel olarak indirin.
+```sh
+git clone https://github.com/kaan8562/astroquantum-simulations
+```
+Kopyalanan dizine gidin. Gerekli kütüphaneleri kurmak için herhangi bir komut istemine(Windows PowerShell, CMD, Linux veya MacOS Terminalleri...) aşağıdaki komutu yazın:
 ```sh
 pip install -r requirements.txt
 ```
